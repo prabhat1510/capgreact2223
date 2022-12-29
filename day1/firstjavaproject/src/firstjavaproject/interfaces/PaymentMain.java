@@ -10,6 +10,9 @@ public class PaymentMain {
 		System.out.println("Normal payment method--"+amt);
 		Payment.receiveStaticPayment();
 		//nbp.receiveDefaultPayment();
+		Payment payment = new NetBankingPayment();
+		Payment pmt = new BharatPePayment();
+		UPIPayment upmt = new BharatPePayment();
 	}
 
 }

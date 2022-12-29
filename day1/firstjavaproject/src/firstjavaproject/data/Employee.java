@@ -14,6 +14,7 @@ public class Employee {
 	}
 	//Parameterized constructors
 	public Employee(int empId, String empName) {
+		this();
 		this.empId = empId;
 		this.empName = empName;
 	}
