@@ -1,0 +1,24 @@
+Git global setup
+git config --global user.name "Anirudh Barman"
+git config --global user.email "anirudh.burman.micro@gmail.com"
+Create a new repository
+git clone https://gitlab-capgemini.stackroute.in/anirudh.burman.micro/assignments.git
+cd assignments
+touch README.md
+git add README.md
+git commit -m "add README"
+git push -u origin master
+Push an existing folder
+cd existing_folder
+git init
+git remote add origin https://gitlab-capgemini.stackroute.in/anirudh.burman.micro/assignments.git
+git add .
+git commit -m "Initial commit"
+git push -u origin master
+Push an existing Git repository
+cd existing_repo
+git remote rename origin old-origin
+git remote add origin https://gitlab-capgemini.stackroute.in/anirudh.burman.micro/assignments.git
+git push -u origin --all
+git push -u origin --tags
+ 
