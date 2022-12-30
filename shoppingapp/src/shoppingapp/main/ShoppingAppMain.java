@@ -11,7 +11,7 @@ import shoppingapp.pojo.Product;
 public class ShoppingAppMain {
 
 	public static void main(String[] args) {
-		// TODO
+		
 		// Create a customer object
 		Customer customer = new Customer();
 		System.out.println(customer);
