@@ -8,13 +8,15 @@ import java.io.IOException;
 public class AppendInAFileExample {
 
 	public static void main(String[] args) {
-		try {
+	 	try {
 			String data = "It's interesting to learn IO";
-			
-			File file = new File("D:\\capgreact2223\\output\\writerFile.txt");
+			String filePath = "D:\\capgreact2223\\output\\writerFile.txt";
+			File file = new File(filePath);
 			if (!file.exists()) {
-
-				file.createNewFile();
+				boolean flag = file.createNewFile();
+				if(flag) {
+					System.out.println("New file created");
+				}
 
 			}
 			FileWriter fw= new FileWriter(file,true);
